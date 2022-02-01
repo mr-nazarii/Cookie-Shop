@@ -1,0 +1,41 @@
+.modalBackground {
+  width: 100vw;
+  height: 100vh;
+  background-color: #383838ab;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.modal {
+  border-radius: 17px;
+  border: none;
+  width: 500px;
+  position: fixed;
+  top: 30%;
+  transform: translateX(-50%);
+  left: 50%;
+  text-align: center;
+  line-height: 30px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+
+  padding: 20px 30px 16px 30px;
+
+  h2 {
+    margin: 0px;
+    font-size: 1.3em;
+  }
+  p {
+    margin: 0;
+    font-size: 14px;
+  }
+  button {
+    margin: 0 6px;
+  }
+}

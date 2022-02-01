@@ -1,0 +1,27 @@
+.header {
+  background-color: #f0c175;
+}
+
+.passive {
+  color: #ffffff;
+  background: #e9ad4f;
+  width: 41px;
+  height: 41px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 500ms;
+}
+
+.active {
+  color: transparent;
+  background: #ad7924;
+  width: 41px;
+  height: 41px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 500ms;
+}

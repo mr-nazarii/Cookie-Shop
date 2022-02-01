@@ -1,0 +1,149 @@
+.itemCard {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  width: 100%;
+  min-width: 450px;
+  max-width: 450px;
+  flex: 1;
+
+  @media (max-width: 450px) {
+    min-width: 220px;
+    max-width: 350px;
+  }
+
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  cursor: default;
+  color: white;
+
+  &__title {
+    border-radius: 20px 20px 0 0;
+
+    text-align: center;
+    display: inline-block;
+    margin: 0;
+    padding: 20px 0em;
+    width: 100%;
+    background-color: #e9ad4f;
+  }
+
+  &__showBtn {
+    font-weight: 700;
+    margin: 0;
+    padding: 10px 0px;
+    width: 100%;
+    text-align: center;
+    background-color: #e9ad4f;
+    border-radius: 0 0 20px 20px;
+  }
+
+  &__info {
+    position: absolute;
+    transition: all 500ms;
+    padding: 20px 0px;
+    display: flex;
+    width: 90%;
+
+    visibility: hidden;
+    opacity: 0;
+    position: relative;
+    top: -75px;
+    z-index: -1;
+
+    justify-content: space-around;
+    background-color: #ad7924;
+  }
+
+  &__infoShow {
+    position: absolute;
+    transition: all 500ms;
+    padding: 20px 0px;
+    display: flex;
+    width: 90%;
+    animation-duration: 500ms;
+    animation-name: slidein;
+    position: relative;
+    top: 0px;
+    border-radius: 0 0 20px 20px;
+
+    justify-content: space-around;
+    background-color: #ad7924;
+  }
+
+  @keyframes slidein {
+    from {
+      z-index: -1;
+    }
+
+    99% {
+      z-index: -1;
+    }
+
+    to {
+      z-index: 1;
+    }
+  }
+
+  &__infoWrap {
+    height: 75px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__price {
+    align-self: center;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 4px;
+  }
+
+  &__code {
+    align-self: center;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 4px;
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__favorite {
+    background: #ad7924;
+    border-radius: 100%;
+    border: none;
+    position: absolute;
+    top: 1.2em;
+    left: 28.8em;
+    width: 45px;
+    height: 45px;
+  }
+
+  &__cookieImg {
+    width: 100%;
+    height: 300px;
+
+    object-fit: cover;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
+}
+
+.emptyCart {
+  color: #ad782471;
+}
+
+.favoriteStar {
+  position: relative;
+
+  left: -0.1em;
+  transition: all 500ms;
+}

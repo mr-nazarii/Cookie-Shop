@@ -29,7 +29,7 @@ The Cookie-shop makes use of a variety of cutting-edge technology to make its jo
 
 Components:
 
-- Modal component:
+- # Modal component:
 
   - Is a template is filled when the redux stored is filled with needed information:
     - Title
@@ -39,25 +39,25 @@ Components:
     - Body color
     - Buttons
 
-- App component:
+- # App component:
 
   - Has all the routes and renders:
     - Cart element
     - Main element
     - Favorite element
 
-- Cart, Main, Favorite component:
+- # Cart, Main, Favorite component:
 
   - Receives data from the storage and renders Item Components with setted data
 
-- Item component:
+- # Item component:
 
   - Checks the store and sets items according to their status and sub statuses
   - Renders passed data from parent component
   - Uses Button component
   - passes functions setters to buttons
 
-- Button component:
+- # Button component:
   - Receives passed styles parameters:
     - Color
     - Width

@@ -18,10 +18,7 @@ const rootReducer = combineReducers({
 const fav = JSON.parse(localStorage.getItem("favArray"));
 const cart = JSON.parse(localStorage.getItem("cartArray"));
 
-const dev =
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__();
-
-const store = createStore(rootReducer, compose(applyMiddleware(thunk), dev));
+const store = createStore(rootReducer, compose(applyMiddleware(thunk)));
 
 store.dispatch(fetchItems());
 

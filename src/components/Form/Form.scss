@@ -1,0 +1,40 @@
+.form {
+  background-color: #6dac5a;
+  border-radius: 6px;
+  padding-bottom: 10px;
+  padding: 10px;
+}
+
+.form-button {
+  margin-top: 20px;
+}
+
+.form-group {
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  box-sizing: border-box;
+
+  label {
+    padding: 3px 0px;
+  }
+
+  &__input {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    border-radius: 2px;
+    border: none;
+    height: 25px;
+  }
+}
+
+.wrapper {
+  flex-wrap: wrap;
+}
+
+.cartBuyBtn {
+  display: block;
+}

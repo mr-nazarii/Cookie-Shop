@@ -6,6 +6,7 @@ const FlexElement = (props) => {
     background: props.bgColor,
     borderRadius: props.radius,
     color: props.elementColor,
+    flexDirection: props.flexDirection ? props.flexDirection : "row",
   };
   return (
     <>

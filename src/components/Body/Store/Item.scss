@@ -21,14 +21,17 @@
   color: white;
 
   &__title {
-    border-radius: 20px 20px 0 0;
-
     text-align: center;
     display: inline-block;
     margin: 0;
     padding: 20px 0em;
     width: 100%;
-    background-color: #e9ad4f;
+    position: relative;
+    left: 8%;
+
+    @media (max-width: 454px) {
+      left: 2%;
+    }
   }
 
   &__showBtn {
@@ -111,15 +114,26 @@
 
   &__wrapper {
     position: relative;
+    display: flex;
+    border-radius: 20px 20px 0 0;
+    background-color: #e9ad4f;
+    align-items: center;
+
+    @media (max-width: 454px) {
+      flex-direction: column;
+      padding-bottom: 10px;
+    }
   }
 
   &__favorite {
     background: #ad7924;
     border-radius: 100%;
     border: none;
-    position: absolute;
-    top: 1.2em;
-    left: 28.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
     width: 45px;
     height: 45px;
   }
@@ -143,7 +157,5 @@
 
 .favoriteStar {
   position: relative;
-
-  left: -0.1em;
   transition: all 500ms;
 }

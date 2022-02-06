@@ -116,7 +116,7 @@ const ItemCard = (props) => {
             ) : (
               <div className="itemCard__infoShow">
                 <p className="itemCard__price" style={inner}>
-                  price {props.price} pack
+                  price {props.price}
                 </p>
 
                 {location.pathname === "/cart" ? (
@@ -124,7 +124,7 @@ const ItemCard = (props) => {
                     btnTitle="Open first modal"
                     backgroundColor={`${props.color}`}
                     textColor={"#FFFFFF"}
-                    width={"160px"}
+                    width={"130px"}
                     height={"35px"}
                     btnName="openModal"
                     onClick={() => {
@@ -155,14 +155,14 @@ const ItemCard = (props) => {
                       dispatch(setModalInner(object));
                     }}
                   >
-                    Remove from cart
+                    Remove
                   </Button>
                 ) : (
                   <Button
                     btnTitle="Open first modal"
                     backgroundColor={`${props.color}`}
                     textColor={"#FFFFFF"}
-                    width={"160px"}
+                    width={"130px"}
                     height={"35px"}
                     btnName="openModal"
                     onClick={() => {

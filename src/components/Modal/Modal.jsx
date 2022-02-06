@@ -72,7 +72,7 @@ const Modal = (props) => {
             bgColor={bodyModal}
             radius={"0px"}
           >
-            <p>{modalText}</p>
+            <FlexElement justify={"center"}>{modalText}</FlexElement>
           </FlexElement>
           <FlexElement
             elementColor={"#ffffff"}
